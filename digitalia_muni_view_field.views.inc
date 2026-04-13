@@ -4,7 +4,6 @@
  * Implements hook_views_data_alter().
  */
 function digitalia_muni_view_field_views_data_alter(array &$data) {
-  dpm($data['node']);
   $data['node']['pdflink'] = array(
     'title' => t('PDF link'),
     'group' => t('Content'),

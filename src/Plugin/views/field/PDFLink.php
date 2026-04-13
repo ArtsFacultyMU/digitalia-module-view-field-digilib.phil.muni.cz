@@ -63,7 +63,7 @@ class PDFLink extends FieldPluginBase {
     // Get the URL of the file
     // Return the link to the PDF file
     $url = $file->createFileUrl();
-    $result = '<a href="' . $url . '" target="_blank">' . $this->t('PDF link') . '</a>';
+    $result = '<a href="' . $url . '" target="_blank">' . $file->getFilename() . '</a>';
 
     return $this->t($result);
   }
